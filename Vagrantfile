@@ -76,5 +76,7 @@ Vagrant.configure("2") do |config|
     npm install -g ethereumjs-testrpc
     npm install -g truffle
     #npm install --save web3
+    curl -sL https://redirector.gvt1.com/edgedl/go/go1.9.2.linux-amd64.tar.gz | tar -C /usr/local -xzf -
+    printf 'PATH=$PATH:/usr/local/go/bin\n' > /etc/profile.d/golang.sh
   SHELL
 end
